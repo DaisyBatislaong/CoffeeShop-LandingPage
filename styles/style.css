@@ -1,0 +1,44 @@
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root{
+   --background-color: #090605;
+   --text-color: #ECE8E5;
+   --accent-color:#E2B885;
+   --accent-color2:#57250F;
+   --accent-color3:#C89B6C;
+   --accent-color4:#966D49;
+   --gray-dark: #6A6241;
+   --gray: #837C83;
+}
+
+/******GLOBAL********/
+.flex-container{
+   display: flex;
+}
+
+li{
+list-style-type: none;
+}
+
+a{
+   text-decoration: none;
+   color: var(--text-color);
+}
+
+/**************NAVBAR*************/
+
+.nav-wrapper{
+   background-color: var(--background-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 10vh;
+}
+
+.nav-links li{
+margin: 0 0.5rem;
+}
