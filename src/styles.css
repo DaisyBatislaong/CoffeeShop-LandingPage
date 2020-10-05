@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .listNav {
+        @apply text-xl font-serif text-textcolor;
+    }
+}
