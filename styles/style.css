@@ -1,120 +1,142 @@
-*{
-   margin: 0px;
-   padding: 0px;
-
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-:root{
-   --background-color: #090605;
-   --text-color: #ECE8E5;
-   --accent-color:#E2B885;
-   --accent-color2:#57250F;
-   --accent-color3:#C89B6C;
-   --accent-color4:#966D49;
-   --gray-dark: #6A6241;
-   --gray: #837C83;
+:root {
+    --background-color: #090605;
+    --text-color: #ece8e5;
+    --accent-color: #e2b885;
+    --accent-color2: #57250f;
+    --accent-color3: #c89b6c;
+    --accent-color4: rgb(150, 109, 73);
+    --gray-dark: #6a6241;
+    --gray: #837c83;
 }
 
 /******GLOBAL********/
-.flex-container{
-   display: flex;
+.flex-container {
+    display: flex;
 }
 
-li{
-list-style-type: none;
+li {
+    list-style-type: none;
 }
 
-a{
-   text-decoration: none;
-   color: var(--text-color);
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
-h1, p, h2, h3, h4, h5, h6{
-   color: var(--text-color) ;
-}
-
-button{
-   background-color: var(--accent-color);
-   padding: 0.8rem 5rem;
-   border-radius: 0.4rem;
-   border: none;
-   font-weight: bold;
-
+h1,
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color);
 }
 
-h1{
-   font-size: 4rem;
+button {
+    background-color: var(--accent-color);
+    padding: 0.8rem 5rem;
+    border-radius: 0.4rem;
+    border: none;
+    font-weight: bold;
 }
-h2{
-   font-size: 3.5rem;
+
+h1 {
+    font-size: 4rem;
 }
-h3{
-   font-size: 3rem;
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 2rem;
 }
 
 /**************NAVBAR*************/
 
-.nav-wrapper{
-   background-color: var(--background-color);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 10vh;
-   margin: 0;
+.nav-wrapper {
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 0;
 }
 
-.nav-links > li{
-margin: 0 0.5rem;
+.nav-links > li {
+    margin: 0 0.5rem;
 }
 
 /**************section1*************/
-.head-wrapper{
-   height: 110vh;
-   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg") center top;
-   background-size: cover;
+.head-wrapper {
+    height: 110vh;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)),
+        url("../img/mike-kenneally-tNALoIZhqVM-unsplash.jpg") center top;
+    background-size: cover;
 }
-.text-wrapper{
-   padding: 15rem 10rem;
-}
-
-.text-wrapper h1{
-padding-bottom: 0.5rem;
-}
-.text-wrapper h4{
-padding: 2rem 0;
+.text-wrapper {
+    padding: 15rem 10rem;
 }
 
-/**************section2************/
-.section-2{
-   background-color: var(--accent-color4);
-   height: 20vh;
+.text-wrapper h1 {
+    padding-bottom: 0.5rem;
 }
-.icon-container{
-justify-content: center;
-}
-
-.icon-container div{
-   padding: 4rem;
-}
-
-i{
-   border: 0.5rem solid white;
+.text-wrapper h4 {
+    padding: 2rem 0;
 }
 
 /**************section2************/
-.section-3{
-   background-color: var(--background-color);
-   height: 90vh;
+.section-2 {
+    background-color: var(--accent-color4);
+    height: 20vh;
+}
+.icon-container {
+    justify-content: center;
 }
 
-.blog-items{
-   justify-content: center;
-}
-.blog-items img{
-   width: 15%;
-   margin: 0 2rem;
+.icon-container div {
+    padding: 4rem;
 }
 
-.section-3-sub{
-   flex-flow: column;
-   align-items: center;
+i {
+    border: 0.5rem solid white;
+}
+
+/**************section3************/
+.section-3 {
+    background-color: var(--background-color);
+    height: 80vh;
+}
+
+.section-3-sub {
+    flex-flow: column;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.blog-items {
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.blog-items img {
+    width: 15%;
+    margin: 0 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+/**************section4************/
+.section-4 {
+    height: 62vh;
+    background: linear-gradient(to right,rgb(150, 109, 73, 0.5), rgb(150, 109, 73, 0.5)), url("../img/background4.jpg");
+    background-size: cover;
+    background-position-y: 97%;
+}
+.section-4-sub {
+    justify-content: space-evenly;
+    padding-top: 12rem;
 }
