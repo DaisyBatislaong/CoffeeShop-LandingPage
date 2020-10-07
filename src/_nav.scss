@@ -1,0 +1,19 @@
+nav {
+   .flex-container {
+      background-color: $background;
+      justify-content: center;
+      align-items: center;
+      height: max-content;
+   }
+
+   ul li {
+      margin: 0rem 1.5rem;
+   }
+
+   img {
+      height: 3rem;
+   }
+   i {
+      margin-left: 0.5rem;
+   }
+}

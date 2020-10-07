@@ -1,0 +1,35 @@
+.section1 {
+   &__sub {
+      height: 100vh;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background3.jpg") bottom;
+      background-size: cover;
+      color: $textcolor;
+
+      .content {
+         margin-top: 10rem;
+         margin-left: 45rem;
+
+         h1 {
+            margin-bottom: 1rem;
+         }
+
+         h4 {
+            margin: 2rem 0rem;
+            font-weight: 900;
+            font-size: 1rem;
+         }
+
+         button {
+            background-color: $accent1;
+            border: none;
+            border-radius: 1rem;
+            padding: 1rem 5rem;
+
+            a {
+               color: $background;
+               font-weight: bolder;
+            }
+         }
+      }
+   }
+}

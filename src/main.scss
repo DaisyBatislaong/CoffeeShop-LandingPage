@@ -1,4 +1,24 @@
-@import 'config';
-@import 'nav';
-@import './scss/fontawesome.scss';
-@import './scss/solid.scss';
+@import "config";
+@import "nav";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "./scss/fontawesome.scss";
+@import "./scss/solid.scss";
+
+a {
+   color: $textcolor;
+   text-decoration: none;
+}
+
+li {
+   text-decoration-style: none;
+}
+
+.flex-container {
+   display: flex;
+}
+
+h1 {
+   font-size: 4rem;
+}

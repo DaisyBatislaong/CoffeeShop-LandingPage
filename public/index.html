@@ -10,62 +10,114 @@
       <!-------NAVBAR------>
       <div>
          <nav>
-            <div>
+            <div class="flex-container">
                <h1>
-                  <a href=""><img src="./img/coffeelogo.png" class="h-20" alt="" /></a>
+                  <a href=""><img src="./img/coffeelogo.png" alt="" /></a>
                </h1>
-               <ul>
+               <ul class="flex-container nav-list">
                   <li>
-                     <span><a href="">OUR COFFEE</a></span>
+                     <a href="">OUR COFFEE</a>
                   </li>
                   <li>
-                     <span><a href="">GIFT SETS</a></span>
+                     <a href="">GIFT SETS</a>
                   </li>
                   <li>
-                     <span><a href="">COOKING GUIDES</a></span>
+                     <a href="">COOKING GUIDES</a>
                   </li>
                   <li>
-                     <span><a href="">WHOLESALE</a></span>
+                     <a href="">WHOLESALE</a>
                   </li>
                   <li>
-                     <span><a href="" >CONTACT</a></span>
+                     <a href="">CONTACT</a>
                   </li>
                </ul>
-               <div>
-                   <i></i>
+               <div class="flex-container">
+                  <a href=""><i class="fas fa-1x fa-search"></i></a>
+                  <a href=""><i class="fas fa-1x fa-bars"></i></a>
                </div>
             </div>
          </nav>
       </div>
       <!--ENDNAVBAR-->
 
-      <section>
-         <div class="bg-headerBack">
-            <h1 class="text-6xl font-serif">Choose your coffee</h1>
-            <p>We deliver high quality effective beans, ground and</p>
-            <p>instant coffee to office and home</p>
-            <h4 class="">20% OFF PURCHASE AT CHECKOUT</h4>
-            <button><a href="" style="color: black">SHOP NOW</a></button>
+      <section class="section1">
+         <div class="section1__sub">
+            <div class="flex-container">
+               <div class="content">
+                  <h1>Choose your coffee</h1>
+                  <p>We deliver high quality effective beans, ground and</p>
+                  <p>instant coffee to office and home</p>
+                  <h4>20% OFF FIRST PURCHASE AT CHECKOUT</h4>
+                  <button><a href="">SHOP NOW</a></button>
+               </div>
+            </div>
          </div>
       </section>
 
       <section class="section-2">
-         <div class="flex-container icon-container"></div>
-      </section>
-      <section class="section-3">
-         <div class="section-3-sub flex-container">
-            <div><h3>Coffee Blog</h3></div>
-            <div class="flex-container blog-items"></div>
-            <div>
-               <h6 style="font-family: Arial, Helvetica, sans-serif"><a href="">MORE POSTS</a></h6>
+         <div class="flex-container icon-container">
+            <div class="flex-container">
+               <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-award fa-stack-1x fa-inverse icons"></i>
+               </span>
+               <h4>The best coffee beans</h4>
+            </div>
+
+            <div class="flex-container">
+               <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-percentage fa-stack-1x fa-inverse icons"></i>
+               </span>
+               <h4>Regular Discounts</h4>
+            </div>
+            <div class="flex-container">
+               <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-award fa-stack-1x fa-inverse icons"></i>
+               </span>
+               <h4>Free Shipping</h4>
             </div>
          </div>
       </section>
+
+      <section class="section-3">
+         <div class="section-3_sub flex-container">
+            <div><h2>Coffee Blog</h2></div>
+            <div class="flex-container blog-items">
+               <div class="wrapper">
+                  <img src="./img/blog1.jpg" alt="">
+                  <div class="overlay">
+                     <div class="content">
+                        <a href="">How to choose Coffee</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="wrapper">
+                  <img src="./img/blog2.jpg" alt="">
+                  <div class="overlay">
+                     <div class="content">
+                        <a href="">How make a coffee</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="wrapper">
+                  <img src="./img/blog3.jpg" alt="">
+                  <div class="overlay">
+                     <div class="content">
+                        <a href="">Coffee Trends 2020</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <h5><a href="">MORE POSTS <i class="fas fa-long-arrow-alt-right"></i></a></h5>
+            </div>
+         </div>
+      </section>
+
       <section class="section-4">
          <div class="section-4-sub flex-container">
-            <i>arrow</i>
-            <h3 style="font-size: 2.3rem">Our Coffee</h3>
-            <i>arrow</i>
          </div>
       </section>
    </body>
