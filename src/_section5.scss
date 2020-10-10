@@ -1,0 +1,46 @@
+.section-5{
+   background-color: $background;
+   color: $textcolor;
+   height: max-content;
+   &-sub{
+      flex-direction: column;
+      align-items: center;
+
+      .heading-container{
+         flex-direction: column;
+         align-items: center;
+         margin-top: 5rem;
+
+         h3{
+            font-weight: 100;
+            font-size: 1.5rem;
+         }
+      }
+
+      .choices-container{
+         flex-direction: column;
+         margin-bottom: 7rem;
+         margin-top: 2rem;
+
+         & div:first-child{
+            border-top: 1px solid $textcolor;
+         }
+         .choices{
+            justify-content: space-between;
+            border-bottom: 1px solid $textcolor;
+            padding: 1rem 0rem;
+            
+
+            h4{
+               margin-right: 15rem;
+               font-weight: 200;
+          
+            }
+            i{
+               font-weight: lighter;
+               font-size: 0.9rem;
+            }
+         }
+      }
+   }
+}

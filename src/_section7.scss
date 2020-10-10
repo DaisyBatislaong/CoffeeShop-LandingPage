@@ -1,0 +1,49 @@
+.section-7 {
+   background-color: $background;
+   color: $textcolor;
+   &-sub {
+      flex-direction: column;
+      align-items: center;
+
+      h2{
+         padding: 3rem 0rem;
+      }
+
+      .flex-container {
+         align-items: center;
+         padding-bottom: 7rem;
+
+         i{
+            font-size: 1.5rem;
+            margin: 2rem;
+            font-weight: lighter;
+            border: 1px solid $textcolor;
+            padding: 0.5rem;
+         }
+
+         i:hover{
+            color: #e6b30d;
+            border: 1px solid #e6b30d;
+         }
+         
+         .text-container{
+            flex-direction: column;
+            background-color:  rgba(71, 70, 71, 0.5);
+            flex-wrap: wrap;
+            width: 30rem;
+            border-radius: 1rem;
+            padding: 2rem;
+
+            p{
+               font-family: Arial, Helvetica, sans-serif;
+               font-size: 0.9rem;
+            }
+
+            p:not(:last-child){
+               padding-bottom: 2rem
+            }
+
+         }
+      }
+   }
+}

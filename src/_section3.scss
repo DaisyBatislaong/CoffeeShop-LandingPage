@@ -1,47 +1,46 @@
-.section-3{
+.section-3 {
    height: max-content;
-   &_sub{
+   &_sub {
       flex-direction: column;
       background-color: $background;
       align-items: center;
       color: $textcolor;
 
-      h2{
+      h2 {
          font-size: 2rem;
          margin-top: 3.5rem;
          margin-bottom: 2rem;
       }
 
-      h5{
-         font-size: 0.9rem;
+      h5 {
+         font-size: 0.85rem;
          font-family: Arial, Helvetica, sans-serif;
          margin-bottom: 6rem;
-     
-         
-         a, i{
+
+         a,
+         i {
             text-decoration: underline;
             color: $accent1;
          }
       }
 
-      .blog-items{
+      .blog-items {
          justify-content: center;
          margin-bottom: 2rem;
 
-         .wrapper{
+         .wrapper {
             position: relative;
          }
-         img{
+         img {
             width: 15rem;
             height: 10rem;
             border-radius: 0.5rem;
             margin: 0rem 1rem;
             opacity: 1;
             // display: block;
-            transition: .5s ease;
-
+            transition: 0.5s ease;
          }
-         .content{
+         .content {
             position: absolute;
             top: 80%;
             left: 50%;
@@ -50,7 +49,7 @@
             white-space: nowrap;
             overflow: hidden;
          }
-         .content a{
+         .content a {
             display: block;
             font-size: 0.9rem;
             padding: 1rem 0.5rem;
@@ -58,18 +57,15 @@
             cursor: pointer;
             color: $accent1;
          }
-         .overlay{
+         .overlay {
             opacity: 0;
          }
-         .wrapper:hover img{
-            opacity: .5;
+         .wrapper:hover img {
+            opacity: 0.5;
          }
-         .wrapper:hover .overlay{
+         .wrapper:hover .overlay {
             opacity: 1;
-      
          }
       }
    }
-
-
 }
