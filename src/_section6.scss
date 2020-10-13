@@ -1,36 +1,43 @@
-.section-6{
-   background-image: url('../img/background6.jpg');
-   background-size: cover;
+.section-6 {
    color: $textcolor;
-   background-color: $accent4;
-   background-position-x: 0% 70%;
-   &-sub{
-      justify-content: flex-end;
-      margin-right: 20rem;
-      padding: 5rem 0rem;
-    
+   &-sub {
+      .first-container {
+         background: linear-gradient(to right, rgba(39, 39, 39, 0.4), rgba(39, 39, 39, 0.4)), url("../img/background6.jpg");
+         background-size: cover;
+         background-position-x: 100%;
+         background-position-y: center;
 
-      .form-container{
-         flex-direction: column;
-    
-
-         input{
-            border: none;
-            border-radius: 0.5rem;
-            padding: 0.75rem;
-            margin: 1rem 0rem;
-
-         }
+         width: 100%;
       }
-      button{
-         background-color: $accent1;
-         border: none;
-         border-radius: 1rem;
-         padding: 1rem 5rem;
+      .second-container {
+         background-color: $accent4;
+         width: 100%;
+         &-sub {
+            margin: 5rem;
+          
 
-         a {
-            color: $background;
-            font-weight: bolder;
+            .form-container {
+               flex-direction: column;
+
+               input{
+                  border: none;
+                  border-radius: 0.5rem;
+                  
+                  padding: 0.9rem 0.5rem;
+                  margin-bottom: 1rem;
+               }
+            }
+            button {
+               background-color: $accent1;
+               border: none;
+               border-radius: 1rem;
+               padding: 1rem 5rem;
+
+               a {
+                  color: $background;
+                  font-weight: bolder;
+               }
+            }
          }
       }
    }

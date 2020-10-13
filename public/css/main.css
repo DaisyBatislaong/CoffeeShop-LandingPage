@@ -278,48 +278,53 @@ nav i {
 }
 
 .section-5-sub .choices-container .choices i {
-  font-weight: lighter;
   font-size: 0.9rem;
 }
 
 .section-6 {
-  background-image: url("../img/background6.jpg");
-  background-size: cover;
   color: #ECE8E5;
+}
+
+.section-6-sub .first-container {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.4)), to(rgba(39, 39, 39, 0.4))), url("../img/background6.jpg");
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.4), rgba(39, 39, 39, 0.4)), url("../img/background6.jpg");
+  background-size: cover;
+  background-position-x: 100%;
+  background-position-y: center;
+  width: 100%;
+}
+
+.section-6-sub .second-container {
   background-color: #966D49;
-  background-position-x: 0% 70%;
+  width: 100%;
 }
 
-.section-6-sub {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 20rem;
-  padding: 5rem 0rem;
+.section-6-sub .second-container-sub {
+  margin: 5rem;
 }
 
-.section-6-sub .form-container {
+.section-6-sub .second-container-sub .form-container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.section-6-sub .form-container input {
+.section-6-sub .second-container-sub .form-container input {
   border: none;
   border-radius: 0.5rem;
-  padding: 0.75rem;
-  margin: 1rem 0rem;
+  padding: 0.9rem 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.section-6-sub button {
+.section-6-sub .second-container-sub button {
   background-color: #f8be76;
   border: none;
   border-radius: 1rem;
   padding: 1rem 5rem;
 }
 
-.section-6-sub button a {
+.section-6-sub .second-container-sub button a {
   color: #090605;
   font-weight: bolder;
 }
@@ -353,7 +358,6 @@ nav i {
 .section-7-sub .flex-container i {
   font-size: 1.5rem;
   margin: 2rem;
-  font-weight: lighter;
   border: 1px solid #ECE8E5;
   padding: 0.5rem;
 }
