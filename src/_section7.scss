@@ -1,6 +1,8 @@
 .section-7 {
    background-color: $background;
    color: $textcolor;
+   max-width: 1366px;
+   margin: auto;
    &-sub {
       flex-direction: column;
       align-items: center;

@@ -1,6 +1,8 @@
 .section-8 {
    background-color: rgb(36, 35, 36);
    color: $textcolor;
+   max-width: 1366px;
+   margin: auto;
    &-sub {
       justify-content: space-evenly;
       padding: 5rem 0rem;

@@ -2,43 +2,29 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
-      <meta name="viewport" content="wid, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./css/main.css" />
       <script src="https://kit.fontawesome.com/3fbd9a60d5.js" crossorigin="anonymous"></script>
       <title>Home</title>
    </head>
    <body>
       <!-------NAVBAR------>
-      <div>
-         <nav>
-            <div class="flex-container">
-               <h1>
-                  <a href=""/><img src="./img/coffeelogo.png" alt="" /></a>
-               </h1>
-               <ul class="flex-container nav-list">
-                  <li>
-                     <a href="">OUR COFFEE</a>
-                  </li>
-                  <li>
-                     <a href="">GIFT SETS</a>
-                  </li>
-                  <li>
-                     <a href="">COOKING GUIDES</a>
-                  </li>
-                  <li>
-                     <a href="">WHOLESALE</a>
-                  </li>
-                  <li>
-                     <a href="">CONTACT</a>
-                  </li>
-               </ul>
-               <div class="flex-container">
-                  <a href=""><i class="fas fa-1x fa-search"></i></a>
-                  <a href=""><i class="fas fa-1x fa-bars"></i></a>
-               </div>
+      <nav>
+         <div class="flex-container main-container">
+            <div class=" flex-container logo">
+               <h1>CoffeeCo</h1>
+               <img src="./img/coffeelogo3.png" alt="">
             </div>
-         </nav>
-      </div>
+            <div class=" flex-container menu-list">
+               <a class="list" href="">Our Coffee</a>
+               <a class="list" href="">Gift Sets</a>
+               <a class="list" href="">Cooking Guides</a>
+               <a class="list" href="">Wholesale</a>
+               <a class="list" href="">Contacts</a>
+            </div>
+               <i class="fas fa-bars burger"></i>
+         </div>
+      </nav>
       <!--ENDNAVBAR-->
 
 
@@ -47,7 +33,7 @@
             <div class="flex-container">
                <div class="content">
                   <h1>Choose your coffee</h1>
-                  <p>We deliver high quality effective beans, ground and</p>
+                  <p>We deliver high quality effective beans, ground and </p>
                   <p>instant coffee to office and home</p>
                   <h4>20% OFF FIRST PURCHASE AT CHECKOUT</h4>
                   <button><a href="">SHOP NOW</a></button>
@@ -149,14 +135,16 @@
       </section>
 
       <section class="section-6">
-         <div class="flex-container section-6-sub">
+         <div class="section-6-sub">
             <div class="first-container"></div>
             <div class="second-container">
                <div class="second-container-sub">
                   <h3>We are always here to help you</h3>
                   <form class="flex-container form-container">
-                     <input type="text" id="name" placeholder="Name">
-                     <input type="text" id="number" placeholder="Phone Number">
+                     <div class=" flex-container input-up">
+                        <input type="text" id="name" placeholder="Name">
+                        <input type="text" id="number" placeholder="Phone Number">
+                     </div>
                      <div>
                         <input type="checkbox" >
                         <label>I confirm the acceptance of user agreement</label>
@@ -218,6 +206,6 @@
          <h2>Copyright 2020 &copy CoffeeCo. All Right Reserved</h2>
       </footer>
 
- 
+   <script src="./js/clicked.js"></script>
    </body>
 </html>

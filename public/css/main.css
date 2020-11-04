@@ -5,75 +5,119 @@
   padding: 0;
 }
 
-nav .flex-container {
+nav {
   background-color: #090605;
+  color: #ece8e5;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-width: 1366px;
+}
+
+@media screen and (max-width: 1366px) {
+  nav {
+    margin: auto;
+  }
+}
+
+nav .main-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  padding: 1rem 0rem;
 }
 
-nav ul li {
-  margin: 0rem 1.5rem;
+nav .main-container .logo h1 {
+  font-size: 2rem;
 }
 
-nav img {
-  height: 3rem;
+nav .main-container .logo img {
+  width: 3rem;
 }
 
-nav i {
-  margin-left: 0.5rem;
+nav .main-container .menu-list a {
+  font-size: 1.2rem;
+  padding: 0rem 1rem;
+  font-weight: lighter;
+}
+
+nav .main-container .menu-list a:hover {
+  color: #c89b6c;
+}
+
+nav .main-container .burger {
+  display: none;
+}
+
+.section1 {
+  max-width: 1366px;
+  margin: auto;
 }
 
 .section1__sub {
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/background3.jpg") bottom;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background3.jpg") bottom;
+  height: 40rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/background3.jpg") left center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background3.jpg") left center;
   background-size: cover;
-  color: #ECE8E5;
+  color: #ece8e5;
 }
 
-.section1__sub .content {
-  margin-top: 10rem;
-  margin-left: 45rem;
+.section1__sub .flex-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.section1__sub .content h1 {
+.section1__sub .flex-container .content {
+  margin-top: 9rem;
+  margin-right: 5rem;
+  margin-left: 3rem;
+}
+
+.section1__sub .flex-container .content h1 {
   margin-bottom: 1rem;
 }
 
-.section1__sub .content h4 {
+.section1__sub .flex-container .content h4 {
   margin: 2rem 0rem;
   font-weight: 900;
   font-size: 1rem;
 }
 
-.section1__sub .content button {
+.section1__sub .flex-container .content button {
   background-color: #f8be76;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   padding: 1rem 5rem;
 }
 
-.section1__sub .content button a {
+.section1__sub .flex-container .content button a {
   color: #090605;
   font-weight: bolder;
 }
 
 .section-2 {
-  background-color: #966D49;
-  height: 8rem;
+  max-width: 1366px;
+  background-color: #966d49;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: auto;
 }
 
 .section-2 .icon-container {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section-2 .icon-container .flex-container {
@@ -85,15 +129,15 @@ nav i {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1.5rem;
-  color: #ECE8E5;
+  color: #ece8e5;
 }
 
 .section-2 .icon-container .flex-container i {
-  color: #ECE8E5;
+  color: #ece8e5;
 }
 
 .section-2 .icon-container .flex-container .icons {
-  color: #966D49;
+  color: #966d49;
 }
 
 .section-2 .icon-container .flex-container h4 {
@@ -101,9 +145,11 @@ nav i {
 }
 
 .section-3 {
+  max-width: 1366px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin: auto;
 }
 
 .section-3_sub {
@@ -111,11 +157,13 @@ nav i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #090605;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ECE8E5;
+  color: #ece8e5;
 }
 
 .section-3_sub h2 {
@@ -141,10 +189,13 @@ nav i {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section-3_sub .blog-items .wrapper {
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .section-3_sub .blog-items img {
@@ -189,6 +240,11 @@ nav i {
   opacity: 1;
 }
 
+.section-4 {
+  max-width: 1366px;
+  margin: auto;
+}
+
 .section-4-sub {
   height: 24rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(200, 155, 108, 0.6)), to(rgba(200, 155, 108, 0.6))), url("../img/background4.jpg");
@@ -205,12 +261,12 @@ nav i {
 
 .section-4-sub h2 {
   font-size: 2.5rem;
-  color: #ECE8E5;
+  color: #ece8e5;
 }
 
 .section-4-sub i {
   font-size: 2rem;
-  color: #ECE8E5;
+  color: #ece8e5;
 }
 
 .section-4-sub i:hover {
@@ -219,10 +275,12 @@ nav i {
 
 .section-5 {
   background-color: #090605;
-  color: #ECE8E5;
+  color: #ece8e5;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  max-width: 1366px;
+  margin: auto;
 }
 
 .section-5-sub {
@@ -261,14 +319,14 @@ nav i {
 }
 
 .section-5-sub .choices-container div:first-child {
-  border-top: 1px solid #ECE8E5;
+  border-top: 1px solid #ece8e5;
 }
 
 .section-5-sub .choices-container .choices {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #ECE8E5;
+  border-bottom: 1px solid #ece8e5;
   padding: 1rem 0rem;
 }
 
@@ -282,7 +340,16 @@ nav i {
 }
 
 .section-6 {
-  color: #ECE8E5;
+  color: #ece8e5;
+  max-width: 1366px;
+  margin: auto;
+}
+
+.section-6-sub {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 .section-6-sub .first-container {
@@ -291,16 +358,20 @@ nav i {
   background-size: cover;
   background-position-x: 100%;
   background-position-y: center;
-  width: 100%;
 }
 
 .section-6-sub .second-container {
-  background-color: #966D49;
-  width: 100%;
+  background-color: #966d49;
 }
 
 .section-6-sub .second-container-sub {
   margin: 5rem;
+}
+
+.section-6-sub .second-container-sub h3 {
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .section-6-sub .second-container-sub .form-container {
@@ -317,6 +388,22 @@ nav i {
   margin-bottom: 1rem;
 }
 
+.section-6-sub .second-container-sub .form-container .flex-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-6-sub .second-container-sub .form-container .input-up input {
+  margin-right: 13rem;
+}
+
+.section-6-sub .second-container-sub .form-container label {
+  font-weight: 100;
+  font-size: 0.90rem;
+}
+
 .section-6-sub .second-container-sub button {
   background-color: #f8be76;
   border: none;
@@ -331,7 +418,9 @@ nav i {
 
 .section-7 {
   background-color: #090605;
-  color: #ECE8E5;
+  color: #ece8e5;
+  max-width: 1366px;
+  margin: auto;
 }
 
 .section-7-sub {
@@ -358,7 +447,7 @@ nav i {
 .section-7-sub .flex-container i {
   font-size: 1.5rem;
   margin: 2rem;
-  border: 1px solid #ECE8E5;
+  border: 1px solid #ece8e5;
   padding: 0.5rem;
 }
 
@@ -391,7 +480,9 @@ nav i {
 
 .section-8 {
   background-color: #242324;
-  color: #ECE8E5;
+  color: #ece8e5;
+  max-width: 1366px;
+  margin: auto;
 }
 
 .section-8-sub {
@@ -466,8 +557,10 @@ nav i {
 
 .footer {
   background-color: #090605;
-  color: #ECE8E5;
+  color: #ece8e5;
   text-align: center;
+  max-width: 1366px;
+  margin: auto;
 }
 
 .footer h2 {
@@ -475,8 +568,103 @@ nav i {
   padding: 2rem 0rem;
 }
 
+@media screen and (max-width: 876px) {
+  nav {
+    background-color: #090605;
+    color: #ece8e5;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  nav .main-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0rem;
+  }
+  nav .main-container .logo {
+    padding-left: 1.5rem;
+  }
+  nav .main-container .logo h1 {
+    font-size: 2rem;
+  }
+  nav .main-container .logo img {
+    width: 3rem;
+  }
+  nav .main-container .menu-list {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 4.5rem;
+    background-color: #090605;
+    width: 100%;
+    height: 100%;
+    left: -100rem;
+  }
+  nav .main-container .menu-list a {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: lighter;
+  }
+  nav .main-container .menu-list a:hover {
+    color: #c89b6c;
+  }
+  nav .main-container .clicked {
+    -webkit-transform: translateX(100rem);
+            transform: translateX(100rem);
+  }
+  nav .main-container .ease {
+    -webkit-transition: ease-in;
+    transition: ease-in;
+  }
+  nav .main-container .burger {
+    padding-right: 1.5rem;
+    font-size: 2rem;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .section1 .flex-container .content {
+    margin-top: 8rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .section1 .flex-container .content h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .section1 .flex-container .content h4 {
+    margin: 2rem 0rem;
+    font-weight: 900;
+    font-size: 1rem;
+  }
+  .section1 .flex-container .content button {
+    background-color: #f8be76;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 1rem 5rem;
+  }
+  .section1 .flex-container .content button a {
+    color: #090605;
+    font-weight: bolder;
+  }
+}
+
 a {
-  color: #ECE8E5;
+  color: #ece8e5;
   text-decoration: none;
 }
 

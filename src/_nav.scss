@@ -1,19 +1,38 @@
 nav {
-   .flex-container {
-      background-color: $background;
+   background-color: $background;
+   color: $textcolor;
+   height: max-content;
+   max-width: 1366px;
+   @media screen and (max-width: 1366px) {
+      margin: auto;
+   }
+   .main-container {
       justify-content: center;
       align-items: center;
-      height: max-content;
-   }
+      padding: 1rem 0rem;
+      .logo {
+         h1 {
+            font-size: 2rem;
+         }
+         img {
+            width: 3rem;
+         }
+      }
 
-   ul li {
-      margin: 0rem 1.5rem;
-   }
-
-   img {
-      height: 3rem;
-   }
-   i {
-      margin-left: 0.5rem;
+      .menu-list {
+         a {
+            font-size: 1.2rem;
+            padding: 0rem 1rem;
+            font-weight: lighter;
+         }
+         a:hover {
+            color: $accent3;
+         }
+      }
+      .burger {
+         // padding: 0rem 0.5rem;
+         // font-size: 2rem;
+         display: none;
+      }
    }
 }

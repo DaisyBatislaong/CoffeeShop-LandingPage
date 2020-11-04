@@ -1,9 +1,14 @@
 .section-2{
+   max-width: 1366px;
    background-color: $accent4;
-   height: 8rem;
+   height: max-content;
+   margin: auto;
 
    .icon-container{
       justify-content: space-evenly;
+      padding-bottom: 2rem;
+      padding-left: 1rem;
+      flex-wrap: wrap;
 
       .flex-container{
          flex-direction: column;

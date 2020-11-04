@@ -1,7 +1,10 @@
 .section-3 {
+   max-width: 1366px;
    height: max-content;
+   margin: auto;
    &_sub {
       flex-direction: column;
+      flex-wrap: wrap;
       background-color: $background;
       align-items: center;
       color: $textcolor;
@@ -27,9 +30,11 @@
       .blog-items {
          justify-content: center;
          margin-bottom: 2rem;
+         flex-wrap: wrap;
 
          .wrapper {
             position: relative;
+            margin-bottom: 1rem;
          }
          img {
             width: 15rem;
