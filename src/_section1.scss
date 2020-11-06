@@ -1,0 +1,42 @@
+.section1 {
+   max-width: 1366px;
+   margin: auto;
+   &__sub {
+     height: 40rem;
+      background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/background3.jpg") left center;
+      background-size: cover;
+      color: $textcolor;
+
+      .flex-container {
+         flex-wrap: wrap;
+         justify-content: flex-end;
+         .content {
+            margin-top: 9rem;
+            margin-right: 5rem;
+            margin-left: 3rem;
+
+            h1 {
+               margin-bottom: 1rem;
+            }
+
+            h4 {
+               margin: 2rem 0rem;
+               font-weight: 900;
+               font-size: 1rem;
+            }
+
+            button {
+               background-color: $accent1;
+               border: none;
+               border-radius: 0.7rem;
+               padding: 1rem 5rem;
+
+               a {
+                  color: $background;
+                  font-weight: bolder;
+               }
+            }
+         }
+      }
+   }
+}

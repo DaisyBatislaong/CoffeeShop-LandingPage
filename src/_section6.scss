@@ -1,0 +1,66 @@
+.section-6 {
+   color: $textcolor;
+   max-width: 1366px;
+   margin: auto; 
+   &-sub {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .first-container {
+         background: linear-gradient(to right, rgba(39, 39, 39, 0.4), rgba(39, 39, 39, 0.4)), url("../img/background6.jpg");
+         background-size: cover;
+         background-position-x: 100%;
+         background-position-y: center;
+      }
+      .second-container {
+         background-color: $accent4;
+
+         &-sub {
+            margin: 4rem;
+            
+
+            h3{
+               font-weight: 200;
+               font-size: 1.5rem;
+               margin-bottom: 1rem;
+            }
+
+            .form-container {
+               flex-direction: column;
+             
+
+               input {
+                  border: none;
+                  border-radius: 0.5rem;
+                  padding: 0.9rem 0.7rem;
+                  margin-bottom: 1rem;
+               }
+
+               .flex-container{
+                  flex-direction: column;
+               }
+
+               .input-up input{
+                    margin-right: 15rem; 
+                    width: 20rem;
+               }
+               label{
+                  font-weight: 100;
+                  font-size: 0.90rem;
+               }
+            
+            }
+            button {
+               background-color: $accent1;
+               border: none;
+               border-radius: 1rem;
+               padding: 1rem 5rem;
+
+               a {
+                  color: $background;
+                  font-weight: bolder;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,51 @@
+.section-8 {
+   background-color: rgb(36, 35, 36);
+   color: $textcolor;
+   max-width: 1366px;
+   margin: auto;
+   &-sub {
+      justify-content: space-evenly;
+      padding: 5rem 0rem;
+      h5 {
+         font-size: 1rem;
+         padding-bottom: 0.5rem;
+         border-bottom: 2px solid $accent1;
+      }
+      h6 {
+         font-size: 0.9rem;
+         padding: 0.5rem 0rem;
+      }
+      h6:hover,
+      i:hover {
+         color: $accent1;
+      }
+      .about-container {
+         flex-direction: column;
+         align-items: center;
+      }
+      .icons-container {
+         flex-direction: column;
+         align-items: center;
+
+         h3 {
+            padding-top: 0.8rem;
+         }
+         h6 {
+            padding-top: 1rem;
+         }
+
+         i {
+            font-size: 1.5rem;
+            padding: 0.9rem 0.5rem;
+         }
+         img {
+            width: 5rem;
+         }
+      }
+
+      .help-container {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
