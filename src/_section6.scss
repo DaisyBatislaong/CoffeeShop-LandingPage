@@ -1,7 +1,7 @@
 .section-6 {
    color: $textcolor;
    max-width: 1366px;
-   margin: auto;
+   margin: auto; 
    &-sub {
       display: grid;
       grid-template-columns: 50% 50%;
@@ -15,7 +15,8 @@
          background-color: $accent4;
 
          &-sub {
-            margin: 5rem;
+            margin: 4rem;
+            
 
             h3{
                font-weight: 200;
@@ -25,20 +26,22 @@
 
             .form-container {
                flex-direction: column;
+             
 
                input {
                   border: none;
                   border-radius: 0.5rem;
-                  padding: 0.9rem 0.5rem;
+                  padding: 0.9rem 0.7rem;
                   margin-bottom: 1rem;
                }
 
                .flex-container{
-                  flex-direction: column;;
+                  flex-direction: column;
                }
 
                .input-up input{
-                    margin-right: 13rem; 
+                    margin-right: 15rem; 
+                    width: 20rem;
                }
                label{
                   font-weight: 100;

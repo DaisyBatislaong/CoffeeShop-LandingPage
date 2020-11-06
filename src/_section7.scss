@@ -14,7 +14,9 @@
       .flex-container {
          align-items: center;
          padding-bottom: 7rem;
-
+         .res{
+            display: none;
+         }
          i{
             font-size: 1.5rem;
             margin: 2rem;

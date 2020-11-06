@@ -26,7 +26,7 @@
             top: 4.5rem;
             background-color: $background;
             width: 100%;
-            height: 100%;
+            height: 80%;
             left: -100rem;
 
             a {
@@ -42,7 +42,7 @@
          .clicked {
             transform: translateX(100rem);
          }
-         .ease{
+         .ease {
             transition: ease-in;
          }
 
@@ -54,33 +54,54 @@
          }
       }
    }
-}
 
+   .section-6 {
+      color: $textcolor;
+      width: auto;
+     
 
-@media screen and (max-width: 460px){
-   .section1 {
-         .flex-container {
-            .content {
-               margin-top: 8rem;
-               margin-right: 2rem;
-               margin-left: 2rem;
-               h1 {
+      &-sub {
+         display: grid;
+         grid-template-columns: 0 100%;
+         .second-container {
+            background-color: $accent4;
+
+            &-sub {
+               margin: 4rem;
+               h3 {
+                  font-weight: 200;
+                  font-size: 1.5rem;
                   margin-bottom: 1rem;
-                  font-size: 3rem;
                }
-   
-               h4 {
-                  margin: 2rem 0rem;
-                  font-weight: 900;
-                  font-size: 1rem;
+
+               .form-container {
+                  flex-direction: column;
+
+                  input {
+                     border: none;
+                     border-radius: 0.5rem;
+                     padding: 0.9rem 0.7rem;
+                     margin-bottom: 1rem;
+                  }
+
+                  .flex-container {
+                     flex-direction: column;
+                  }
+
+                  .input-up input {
+                     margin-right: 15rem;
+                  }
+                  label {
+                     font-weight: 100;
+                     font-size: 0.9rem;
+                  }
                }
-   
                button {
                   background-color: $accent1;
                   border: none;
-                  border-radius: 0.7rem;
+                  border-radius: 1rem;
                   padding: 1rem 5rem;
-   
+
                   a {
                      color: $background;
                      font-weight: bolder;
@@ -90,3 +111,234 @@
          }
       }
    }
+}
+
+@media screen and (max-width: 460px) {
+   .section1 {
+      .flex-container {
+         .content {
+            margin-top: 8rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            h1 {
+               margin-bottom: 1rem;
+               font-size: 3rem;
+            }
+
+            h4 {
+               margin: 2rem 0rem;
+               font-weight: 900;
+               font-size: 1rem;
+            }
+
+            button {
+               background-color: $accent1;
+               border: none;
+               border-radius: 0.7rem;
+               padding: 1rem 5rem;
+
+               a {
+                  color: $background;
+                  font-weight: bolder;
+               }
+            }
+         }
+      }
+   }
+
+   .section-6 {
+      max-width: 1366px;
+      margin: auto;
+      color: $textcolor;
+      &-sub {
+         display: grid;
+         grid-template-columns: 0 100%;
+         .first-container {
+            background: linear-gradient(to right, rgba(39, 39, 39, 0.4), rgba(39, 39, 39, 0.4)), url("../img/background6.jpg");
+            background-position-x: 100%;
+            background-position-y: center;
+            background-size: cover;
+            width: auto;
+         }
+         .second-container {
+            background-color: $accent4;
+            width: fit-content;
+            &-sub {
+               margin: 2.5rem;
+
+               h3 {
+                  font-weight: 200;
+                  font-size: 1.2rem;
+                  margin-bottom: 1rem;
+               }
+
+               .form-container {
+                  flex-direction: column;
+
+                  input {
+                     border: none;
+                     border-radius: 0.5rem;
+                     padding: 0.5rem 0.3rem;
+                     margin-bottom: 1rem;
+                  }
+
+                  .flex-container {
+                     flex-direction: column;
+                  }
+
+                  .input-up input {
+                     margin-right: 15rem;
+                     width: 100%;
+                  }
+                  label {
+                     font-weight: 100;
+                     font-size: 0.9rem;
+                  }
+               }
+               button {
+                  background-color: $accent1;
+                  border: none;
+                  border-radius: 1rem;
+                  padding: 1rem 3rem;
+
+                  a {
+                     color: $background;
+                     font-weight: bolder;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .section-5{
+      &-sub{
+            h3{
+               font-weight: 100;
+               font-size: 1.2rem;
+             
+            }
+         }
+   
+         .choices-container{
+               h4{
+                  margin-right: 8rem;
+                  font-weight: 200;
+             
+               }
+             
+            }
+         }
+         .section-8 {
+            background-color: rgb(36, 35, 36);
+            color: $textcolor;
+            max-width: 1366px;
+            margin: auto;
+            &-sub {
+               justify-content: space-evenly;
+               padding: 5rem 0rem;
+               h5 {
+                  font-size: 0.8rem;
+                  padding-bottom: 0.5rem;
+                  border-bottom: 2px solid $accent1;
+               }
+               h6 {
+                  font-size: 0.7rem;
+                  padding: 0.5rem 0rem;
+               }
+               h6:hover,
+               i:hover {
+                  color: $accent1;
+               }
+               .about-container {
+                  flex-direction: column;
+                  align-items: center;
+               }
+               .icons-container {
+                  flex-direction: column;
+                  align-items: center;
+         
+                  h3 {
+                     padding-top: 0.8rem;
+                     font-size: 0.8rem;
+                  }
+                  h6 {
+                     padding-top: 1rem;
+                  }
+         
+                  i {
+                     font-size: 1.2rem;
+                     padding: 0.9rem 0.5rem;
+                  }
+                  img {
+                     width: 4.5rem;
+                  }
+               }
+         
+               .help-container {
+                  flex-direction: column;
+                  align-items: center;
+               }
+            }
+         }
+      }
+@media screen and (max-width: 650px){
+   .section-7 {
+      background-color: $background;
+      color: $textcolor;
+      max-width: 1366px;
+      margin: auto;
+      &-sub {
+         flex-direction: column;
+         align-items: center;
+   
+         h2{
+            padding: 3rem 0rem 1rem 0rem;
+         }
+   
+         .flex-container {
+            flex-direction: column;
+            // align-items: center;
+            padding-bottom: 5rem;
+            .res{
+               display: block;
+            }
+            .orig{
+               display: none;
+            }
+   
+            i{
+               font-size: 1.5rem;
+               margin: 2rem;
+               border: 1px solid $textcolor;
+               padding: 0.5rem;
+            }
+   
+            i:hover{
+               color: #e6b30d;
+               border: 1px solid #e6b30d;
+            }
+            
+            .text-container{
+               flex-direction: column;
+               background-color:  rgba(71, 70, 71, 0.5);
+               flex-wrap: wrap;
+               width: 20rem;
+               border-radius: 1rem;
+               padding: 2rem;
+   
+               p{
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 0.9rem;
+               }
+   
+               p:not(:last-child){
+                  padding-bottom: 2rem
+               }
+   
+            }
+         }
+      }
+   }
+   
+}
